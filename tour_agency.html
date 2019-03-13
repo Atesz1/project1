@@ -1,16 +1,38 @@
-<ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
-
+<html>
+<head>
+<style>
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">Introduction</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+</ul>
 
 <div class="slideshow-container">
   <center>
@@ -33,11 +55,17 @@ ul {
   </div>
   </center>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
-<div style="text-align:cent
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script type="text/javascript" src="./scripts/tour_agency.js"></script>
+
+</body>
+</html>

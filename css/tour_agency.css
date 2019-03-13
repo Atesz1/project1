@@ -1,5 +1,11 @@
 * {box-sizing:border-box}
 
+.body {
+  background-image: url("./images/pattern.png"); 
+  background-size: cover;
+   background-position: right top;
+    background-attachment: fixed;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -87,4 +93,10 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
