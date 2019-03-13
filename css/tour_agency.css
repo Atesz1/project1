@@ -1,11 +1,13 @@
-* {box-sizing:border-box}
-
-.body {
-  background-image: url("./images/pattern.png"); 
-  background-size: cover;
-   background-position: right top;
-    background-attachment: fixed;
+div#Header {
+ width:100%;
+ text-align:center;
 }
+
+body {
+  background-image:url("../images/good.jpg");
+}
+
+* {box-sizing:border-box}
 
 .slideshow-container {
   max-width: 1000px;
@@ -13,11 +15,9 @@
   margin: auto;
 }
 
-
 .mySlides {
   display: none;
 }
-
 
 .prev, .next {
   cursor: pointer;
@@ -33,7 +33,6 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 
 .next {
   right: 0;
@@ -61,7 +60,6 @@
   position: absolute;
   top: 0;
 }
-
 
 .dot {
   cursor: pointer;
@@ -93,10 +91,4 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
